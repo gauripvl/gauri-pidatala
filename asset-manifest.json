@@ -1,0 +1,15 @@
+{
+  "files": {
+    "main.css": "/gauri-pidatala/static/css/main.4a125a5f.css",
+    "main.js": "/gauri-pidatala/static/js/main.79454951.js",
+    "static/js/453.760b0553.chunk.js": "/gauri-pidatala/static/js/453.760b0553.chunk.js",
+    "index.html": "/gauri-pidatala/index.html",
+    "main.4a125a5f.css.map": "/gauri-pidatala/static/css/main.4a125a5f.css.map",
+    "main.79454951.js.map": "/gauri-pidatala/static/js/main.79454951.js.map",
+    "453.760b0553.chunk.js.map": "/gauri-pidatala/static/js/453.760b0553.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.4a125a5f.css",
+    "static/js/main.79454951.js"
+  ]
+}

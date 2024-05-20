@@ -2,10 +2,10 @@ import React from 'react';
 
 function Projects() {
     return (
-        <section id="projects">
+        <div className="wavy-section">
             <h2>Projects</h2>
             <p>Details about my projects.</p>
-        </section>
+        </div>
     );
 }
 

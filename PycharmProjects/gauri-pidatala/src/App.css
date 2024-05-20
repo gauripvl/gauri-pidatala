@@ -1,13 +1,53 @@
+@import url('https://fonts.googleapis.com/css2?family=Platypi:wght@400;700&display=swap');
+
 body {
-    font-family: Arial, sans-serif;
+    background: none;
+    font-family: 'Platypi', serif;
+    font-optical-sizing: auto;
+    font-weight: normal;
     margin: 0;
     padding: 0;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
+.App {
+    display: flex;
+    flex-direction: column;
+    flex-grow: 1;
+    min-height: 100vh;
+}
+
+.animated-background {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+    background-image: url('/public/new-wave.svg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    animation: animate-background 20s infinite alternate;
+}
+
+@keyframes animate-background {
+    0% {
+        background-position: 0 0;
+    }
+    100% {
+        background-position: 100% 100%;
+    }
 }
 
 header {
-    background-color: #333;
-    color: white;
+    background-color: transparent;
+    color: #333;
     padding: 10px 0;
+    font-size: large;
+    font-weight: bold;
 }
 
 nav ul {
@@ -23,23 +63,23 @@ nav ul li {
 }
 
 nav ul li a {
-    color: white;
+    color: #FFCA4B;
     text-decoration: none;
 }
 
-section {
-    padding: 20px;
-    margin: 20px;
-    border: 1px solid #ccc;
-    border-radius: 5px;
+main {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
 }
 
 footer {
     text-align: center;
     padding: 10px 0;
-    background-color: #333;
-    color: white;
-    position: fixed;
-    bottom: 0;
+    background-color: transparent;
+    color: #333;
     width: 100%;
+    flex-shrink: 0;
+    z-index: 1;
+    position: relative;
 }
